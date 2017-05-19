@@ -1,4 +1,4 @@
-package com.example.tsuon.cs499project;
+package cs.app.tsuon.cs499project;
 
 import org.junit.Test;
 

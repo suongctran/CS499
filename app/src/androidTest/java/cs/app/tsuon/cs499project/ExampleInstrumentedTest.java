@@ -1,4 +1,4 @@
-package com.example.tsuon.cs499project;
+package cs.app.tsuon.cs499project;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.example.tsuon.cs499project", appContext.getPackageName());
+        assertEquals("cs.app.tsuon.cs499project", appContext.getPackageName());
     }
 }
