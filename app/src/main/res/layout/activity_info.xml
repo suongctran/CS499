@@ -1,64 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@drawable/bgpic">
 
     <LinearLayout
-        android:orientation="vertical" android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_weight="2"
-            android:layout_height="0dp"
-            android:orientation="horizontal"
-            android:gravity="center">
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/backButton"
-                android:text="Back"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="100dp"/>
-            <ImageButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/addToFaveImgButton"
-                android:src="@mipmap/ic_launcher"/>
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_weight="10"
-            android:layout_height="0dp"
-            android:padding="30dp"
-            android:orientation="vertical"
-            android:gravity="center">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/locationName"
-                android:gravity="center"
-                android:layout_weight="1"
-                android:text="Name of place"/>
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/locationImage"
-                android:layout_weight="3"
-                android:src="@mipmap/ic_launcher_round"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:text="Description"
-                android:layout_weight="2"
-                android:id="@+id/summary"/>
-        </LinearLayout>
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/backButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/backimg"
+            android:backgroundTint="#FFFFFF"/>
     </LinearLayout>
 
-</android.support.constraint.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6"
+        android:padding="30dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:textColor="#FFFFFF"
+            android:fontFamily="sans-serif-condensed"
+            android:textSize="28dp"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"/>
+        <GridView
+            android:id="@+id/imgGridView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="7"
+            android:columnWidth="100dp"
+            android:numColumns="auto_fit"
+            android:verticalSpacing="2.5dp"
+            android:horizontalSpacing="2.5dp"
+            android:stretchMode="columnWidth"
+            android:gravity="center"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="23dp"
+            android:id="@+id/ratingsInfoText"/>
+    </LinearLayout>
+</LinearLayout>

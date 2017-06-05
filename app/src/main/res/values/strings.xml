@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">CS499Project</string>
+    <string name="appID">OOZhRvxixrIkkxQfnt5eiQ</string>
+    <string name="appSecret">78ruj2zmN3uvzz9FnKUJxlrO0COxq9anzKDymzwKRcR0cB1Q2pZLsJybdc5MEmPY</string>
+    <string name="accessToken">DzywoEm_iVZQPrQNh2N7mR4t8QtdoJeN6Ckk5BFghCZpsEYm3yT0LIkAH4THWecetOGT4IX89iBUM-NWdenncZxV9uhzBytMykQB0bKMQBo5R2iPJL0Zwqed-KwoWXYx</string>
+    <string name="googleAPIKey">AIzaSyD1tOVEFHI-UX7PLP1itxHyDb2Uutgb1Y4</string>
 </resources>
